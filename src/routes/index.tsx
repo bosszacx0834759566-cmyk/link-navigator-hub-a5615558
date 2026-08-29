@@ -86,8 +86,9 @@ function Explorer() {
       </div>
 
 
-      {/* LEVEL 2 — brand strip */}
+      {/* LEVEL 2 — brand strip + system tab rail */}
       <SystemHeader />
+      <SystemRail state={state} />
 
       {/* LEVEL 3 — slide-out data panel for the active tab */}
       <SystemPanel state={state} />
