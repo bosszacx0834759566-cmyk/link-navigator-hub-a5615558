@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useOloLink } from '@/hooks/use-ololink';
 import { SystemHeader } from '@/components/ololink/system-header';
 
+import { SystemRail } from '@/components/ololink/system-rail';
 import { SystemPanel } from '@/components/ololink/system-panel';
 import { ObjectCard } from '@/components/ololink/object-card';
 import { Dock } from '@/components/ololink/dock';
@@ -85,8 +86,9 @@ function Explorer() {
       </div>
 
 
-      {/* LEVEL 2 — brand strip */}
+      {/* LEVEL 2 — brand strip + system tab rail */}
       <SystemHeader />
+      <SystemRail state={state} />
 
       {/* LEVEL 3 — slide-out data panel for the active tab */}
       <SystemPanel state={state} />
