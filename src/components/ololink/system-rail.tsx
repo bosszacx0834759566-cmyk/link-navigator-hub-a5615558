@@ -144,7 +144,7 @@ export function SystemRail({ state }: { state: OloLinkState }) {
   const onToggle = state.togglePanel;
 
   return (
-    <nav className="pointer-events-auto absolute bottom-0 left-0 top-12 z-40 flex w-[68px] flex-col items-center gap-1.5 overflow-y-auto border-r border-white/[0.06] bg-black/65 py-3 backdrop-blur-xl [scrollbar-width:none]">
+    <nav className="pointer-events-auto absolute bottom-0 left-0 top-0 z-40 flex w-[68px] flex-col items-center gap-1.5 overflow-y-auto border-r border-white/[0.06] bg-black/65 py-3 backdrop-blur-xl [scrollbar-width:none]">
       {SYSTEM_TABS.map((item, i) => (
         <div key={item.id} className={item.id === 'settings' ? 'mt-auto' : undefined}>
           <RailButton
